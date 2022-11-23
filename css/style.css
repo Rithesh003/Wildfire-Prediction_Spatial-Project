@@ -5,12 +5,10 @@
 }
 body{
     height:100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e2e2e2;
+    font-family: "Poppins",sans-serif;
+    background-color: rgb(139, 62, 85);
 }
-.toggle{
+/* .toggle{
     position:relative;
     height:70px;
     width: 70px;
@@ -44,4 +42,43 @@ body{
     height: 55px;
     width: 55px;
     background-color: #fff;
+} */
+
+a,
+button{
+    font-family:"Poppins",sans-serif;
+}
+.dropdown{
+    height:10vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:80%;
+    margin:auto;
+}
+ 
+.projects ul{
+    position: absolute;
+    background:transparent;
+    margin-top: 10px;
+    width:200px;
+    height: 200px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    list-style:none;
+
+}
+.projects a{
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown button{
+    background: transparent;
+    border: none;
+    color: white;
+
 }
