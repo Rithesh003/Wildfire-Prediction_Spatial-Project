@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.overview{
+    color:#ddd;
+}
+
+.title{
+    background: -webkit-linear-gradient(#FFCBA7, #F96C85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .logo{
     height: 100px;
     width: 10%;
@@ -90,6 +99,7 @@ button{
     transition: all 0.4s ease;
 
 }
+
 .projects a{
     color: black;
     text-decoration: none;
