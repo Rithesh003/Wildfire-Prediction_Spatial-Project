@@ -6,9 +6,6 @@
 .overview{
     color:#ddd;
 }
-.overview1{
-    color:grey;
-}
 
 .title{
     background: -webkit-linear-gradient(#FFCBA7, #F96C85);
@@ -83,7 +80,7 @@ button{
     width:80%;
     margin:auto;
 }
- 
+
 .projects ul{
     position: absolute;
     background:white;
@@ -104,7 +101,7 @@ button{
 }
 
 .projects a{
-    color: black;
+    color: rgb(232, 206, 206);
     text-decoration: none;
 }
 .projects li{

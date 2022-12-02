@@ -30,7 +30,7 @@
       }
  
     </style>
-  <nav class="navbar is-transparent">
+  <nav class="navbar is-transparent" style="background: transparent;">
     <div class="navbar-brand">
       <img src="images/Screenshot 2022-11-26 161544.png" width="50px" height="20px">
       <a class="navbar-item" href="#">
@@ -111,8 +111,8 @@
       "esri/widgets/ScaleBar",
       "esri/widgets/Legend","esri/widgets/TimeSlider"], function(esriConfig, WebMap, MapView,ScaleBar,Legend,TimeSlider) {
 
-       
-        esriConfig.apiKey = "AAPKded51e04852e4a99b70d21927dbd7628oCCtmkfSggC3EoCQVgiTa5426mCw7SnK4vykCGXENbGxJSbOjlvt0_o2ociHMaH7";
+        esriConfig.apiKey = "AAPK897c5c43fcf2436ab554214d5a56ce60ys6gx3L6Yj7qRi2d_2NVhMb6SmbT3sEBbFEeWJymb3aVDFErDyuqyQglQpGQM7WL";
+        // esriConfig.apiKey = "AAPKded51e04852e4a99b70d21927dbd7628oCCtmkfSggC3EoCQVgiTa5426mCw7SnK4vykCGXENbGxJSbOjlvt0_o2ociHMaH7";
         //esriConfig.portalUrl = "https://ucr.maps.arcgis.com/portal";
 
         
@@ -124,7 +124,8 @@
           //id:"ac82a2a069c84a4ab63020b0e84aaf6f"
           //id:"c65bd742c90f4597adc4150c1ebdfa7a"
           // id: "e2de6a11d5ed4b3c9f726af7d6bf6144"
-          id: "bfe58d182826424bb0a154c5a511935a"
+          // id: "bfe58d182826424bb0a154c5a511935a"
+          id:"8349f196c75b4d94bb4896142cd61fa2"
           
         }
 
@@ -139,7 +140,7 @@
       const legend = new Legend({
         view: view
       });
-      view.ui.add(legend, "top-right");
+      view.ui.add(legend, "top-left");
        // time slider widget initialization
        TimeSlider.getPropertiesFromWebMap(webmap).then((timeSliderSettings) => {
   const timeSlider = new TimeSlider({

@@ -14,30 +14,36 @@
 </head>
 <style>
     body {
-        background-image: url('images/fire.png');
+        background-image: url('images/bg3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
+        height:auto;
         background-size: cover;
     }
 .info{
 text-align: center;
   width: 1000px; 
+  font-size:x-large;
   padding-top: 30px;
   padding-left:100px;
   font-family: 'Lexend Deca', sans-serif; 
   color:powderblue;   
 
 }
+/* .navbar-item , 
+.navbar-link{
+  color:aliceblue;
+} */
 
 </style>
 
-<nav class="navbar is-transparent">
-    <div class="navbar-brand">
+<nav class="navbar is-transparent" style="background: transparent;">
+      <div class="navbar-brand">
       <img src="images/Screenshot 2022-11-26 161544.png" width="50px" height="20px">
       <a class="navbar-item" href="#">
         <!-- <img src="images/logo1.png" alt="Bulma: a modern CSS framework based on Flexbox" width="80" height="100"> -->
         
-          <h2 class = "title">Wildfire Prediction</h2>
+          <h2 class = "title"><b>WildFire Prediction</b></h2>
       </a>
       
       <div class="navbar-burger" data-target="navbarExampleTransparentExample">
@@ -49,11 +55,11 @@ text-align: center;
   
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" style="color: aliceblue;"href="#">
           Home
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">
+          <a class="navbar-link" style="color: aliceblue;" href="#">
             Docs
           </a>
           <div class="navbar-dropdown is-boxed">
@@ -77,7 +83,7 @@ text-align: center;
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#">
+            <a class="navbar-link" style="color: aliceblue;" href="#">
               References
             </a>
             <div class="navbar-dropdown is-boxed">
@@ -94,13 +100,29 @@ text-align: center;
     </div>
 </nav>
 
-<h1 class="info">WildFire prediction using Machine learning and Spatial Data obtained from MODIS Terra Satellites</h1>
+<h1 class="info"><b>" WildFire prediction using Machine learning and Spatial Data obtained from MODIS Terra Satellites "</b></h1>
 <br>
-<p style="text-align:left;color:beige;">This is dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text. This is more dummy text.</p>
+<p style="text-align:left;padding-left:50px;padding-right:100px;color:beige;"><b>
+  Among the most devastating natural catastrophes that people frequently cause is wildfire. 
+  In the US, there are often more than 100,000 wildfires every year, which destroy 4 to 5 million
+   acres of land and result in significant financial damage. Wildfires that occur naturally, however,
+    have a significant impact on the ecology. This research intends to offer understanding of wildfire, 
+    its causes, and behavior, which aids in the formulation of helpful recommendations to improve public
+     safety and reduce the financial harm caused by subsequent wildfires.
 
-<h2 class="info">The Explanation</h2>
+In academia, there has been some empirical work on modeling wildfires, as well as testing and analysis
+ of several machine learning models for forecasting wildfires. The goal of this initiative is to put 
+ theoretical knowledge into practice, particularly as it relates to the United States.</b>
+</p>
+
+<h2 class="info" style="text-align:right;padding-right:30px;"><b>The Motivation</b></h2>
 <br>
-<p style="text-align:left;color:beige;">Using either the universal selector or type selector <strong>body</strong> and the CSS text-align property set to “center,” everything on the page will be centered.</p>
+<p style="text-align:center;padding-left:400px;padding-right:10px;color:beige">
+  <b>Unidentifying the cause of the wildfire is the one of few main problem. So, with the help of the machine learning models, we were able to predict the cause and the risks of wildfire. And also plan for some preventive measures. The second problem is the awareness of the people in the areas prone to wildfire.</b>
+  <b>The project's goal is to create an accessible web app that can educate those 
+    without technical backgrounds on how machine learning models may increase public
+     awareness of wildfires and lower dangers in the future. And also provide insightful information from analyzing historical data and utilizing appropriate machine learning techniques to solve above problems.</b>
+  </p>
 
 
 </html>

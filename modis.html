@@ -18,29 +18,95 @@
         background-attachment: fixed;
         background-size: cover;
     }
+    .info{
+text-align: left;
+  width: 1000px; 
+  padding-top: 30px;
+  padding-left:200px;
+  font-family: 'Lexend Deca', sans-serif; 
+  color:powderblue;   
+
+}
 </style>
-<div id="navbarExampleTransparentExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="homepage.html">
-        Home
+<nav class="navbar is-transparent" style="background: transparent;">
+    <div class="navbar-brand">
+      <img src="images/Screenshot 2022-11-26 161544.png" width="50px" height="20px">
+      <a class="navbar-item" href="#">
+        <!-- <img src="images/logo1.png" alt="Bulma: a modern CSS framework based on Flexbox" width="80" height="100"> -->
+        
+          <h2 class = "title">Wildfire Prediction</h2>
       </a>
       
-
-        </div>
+      <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-<h1 class="overview">Due to its dry, sunny, Mediterranean environment, 
-    some of the greatest outdoor activities are possible there. Nevertheless, 
-    the state also contains more than 2 million residences at high or extremely 
-    high danger of wildfire destruction as a result of these natural elements and 
-    the presence of human activity that follows. In California, wildfires scorched 
-    more than 1.8 million acres in only one year. When a fire spreads to this size, 
-    it not only poses a hazard to individuals at the point of ignition, but it also 
-    has the potential to have far-reaching consequences miles away, as I personally 
-    saw with the 2018 Camp Fire, California's deadliest and most destructive wildfire.
-       
-    The Bay Area saw a scarcity of the pollutant-blocking N95 masks as a result of the Bay
-     Area experiencing heavy smoke from the northeastern region of the state. At most, as 
-     it was for me, those impacted experienced two weeks of seclusion from the outside world; 
-     yet, at its worst, it might have resulted in sad deaths, forced homelessness, and the 
-     eradication of entire towns.</h1>
+  
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" style="color: aliceblue;" href="homepage.html">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" style="color: aliceblue;" href="#">
+            Docs
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="modis.html">
+              Modis Results
+            </a>            
+            <a class="navbar-item" href="OG.html">
+              Original Data
+            </a>
+            <a class="navbar-item" href="map_tutorial.html">
+              Prediction
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="overview.html">
+              Overview
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" style="color: aliceblue;" href="#">
+              References
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="https://www.esri.com/en-us/landing-page/product/2019/arcgis-online/overview?gclid=Cj0KCQiAj4ecBhD3ARIsAM4Q_jEtkmaAV5PkEplXUAYPmP8YsC-30AAcTZFS7h-JqtNv5G0NmIbdJOcaArFvEALw_wcB&adumkts=product&adupro=ArcGIS_Online&aduc=advertising&adum=ppc&aduSF=google&utm_Source=advertising&aduca=arcgis_online_promotions_demandgen&aduco=DPM_OLP_Brand_RSA&adut=DPM_PPCBrand_ArcGIS&aduat=contact_request&adupt=lead_gen&sf_id=7015x000000iS1fAAE&ef_id=Cj0KCQiAj4ecBhD3ARIsAM4Q_jEtkmaAV5PkEplXUAYPmP8YsC-30AAcTZFS7h-JqtNv5G0NmIbdJOcaArFvEALw_wcB:G:s&s_kwcid=AL!8948!3!616179855032!e!!g!!arcgis&_bk=arcgis&_bt=616179855032&_bm=e&_bn=g&_bg=101535483299&aducop=arcgis-e&gclsrc=aw.ds">
+                ArcGIS Map Online
+              </a>
+              <a class="navbar-item" href="https://ladsweb.modaps.eosdis.nasa.gov/search/order/1">
+                Datasets
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 style="text-align:left;padding-left:550px;color:beige;font-size: 30px;"><b>MODIS</b> </h1>
+  <h2 style="text-align:left;padding-left:200px;color:beige;"><b>Introduction</b></h2>
+<p class="info"><b><span>MODIS is a twin sensor of the Terra and Aqua satellites, and its 36 electromagnetic 
+    spectral bands vary from visible bands to thermal infrared bands.Training any ML approach requires 
+    adequate input data and a reliable training dataset. We used freely available MODIS fire-event data 
+    (from 2012 to 2017) to generate an inventory dataset of the precise polygons of the wildfire-affected areas. 
+    MODIS fire products provide unique information like the time and spatial distribution of the fires. Burned areas 
+    in these products are represented by the removal of vegetation, deposits of charcoal and ash, and vegetation structure 
+    alteration, and the algorithms of burned area mapping benefit from such temporal, spectral, and structural changes.</span>
+</b>
+    </p>
+    <br>
+    <h2 style="text-align:left;padding-left:200px;color:beige;"><b>Data Collection</b></h2>
+    <p class="info"><b><span>MODIS satellite provided dataset and focused on three parameters 
+        Normalized Difference Vegetation Index (NDVI), Land Surface temperature (LST) and Thermal Anomalies. 
+        Used NDVI and LST because of the fact that the status of the crops and the temperature of the soil play
+         an important role in facilitating the fire. (i.e, A drop crop in hot and dry soil conditions is more likely 
+         to catch a fire compared to a wet crop in moist soil)
+    </span></b></p>
      </html>
