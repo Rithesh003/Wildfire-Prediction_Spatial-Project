@@ -92,10 +92,10 @@ text-align: left;
   </nav>
   <h1 style="text-align:left;padding-left:550px;color:beige;font-size: 30px;"><b>MODIS Results</b> </h1>
   <h2 style="text-align:left;padding-left:200px;color:beige;"><b>Introduction</b></h2>
-<p class="info"><b><span>MODIS is a twin sensor of the Terra and Aqua satellites, and its 36 electromagnetic 
-    spectral bands vary from visible bands to thermal infrared bands.Training any ML approach requires 
-    adequate input data and a reliable training dataset. We used freely available MODIS fire-event data 
-    (from 2012 to 2017) to generate an inventory dataset of the precise polygons of the wildfire-affected areas. 
+<p class="info"><b><span>MODIS is a satellite based sensor that operates on the Terra and Aqua spacecrafts. It has 36 electromagnetic 
+    spectral bands that can pck up data from the visible spectrum band to thermal infrared bands. Training any ML approach requires 
+    adequate input data and a reliable training dataset. We used freely available MODIS data 
+    to generate an inventory dataset of the precise polygons of the wildfire-affected areas. 
     MODIS fire products provide unique information like the time and spatial distribution of the fires. Burned areas 
     in these products are represented by the removal of vegetation, deposits of charcoal and ash, and vegetation structure 
     alteration, and the algorithms of burned area mapping benefit from such temporal, spectral, and structural changes.</span>
@@ -103,10 +103,10 @@ text-align: left;
     </p>
     <br>
     <h2 style="text-align:left;padding-left:200px;color:beige;"><b>Data Collection</b></h2>
-    <p class="info"><b><span>MODIS satellite provided dataset and focused on three parameters 
-        Normalized Difference Vegetation Index (NDVI), Land Surface temperature (LST) and Thermal Anomalies. 
-        Used NDVI and LST because of the fact that the status of the crops and the temperature of the soil play
-         an important role in facilitating the fire. (i.e, A drop crop in hot and dry soil conditions is more likely 
-         to catch a fire compared to a wet crop in moist soil)
+    <p class="info"><b><span>MODIS satellite provided datasets focused on three parameters, 
+        Normalized Difference Vegetation Index (NDVI), Land Surface temperature (LST) and Thermal Anomalies.
+        NDVI values are used as a measure of vegetation greenness. LST gives us land temperature and Thermal Anomalies gives information on fire occurrences.
+        These parameters help us predict wildfires. 
+         
     </span></b></p>
      </html>
