@@ -131,7 +131,7 @@
       const view = new MapView({
         map: webmap,
         container: "viewDiv",
-        zoom: 7
+        zoom: 4
       
       });
       const legend = new Legend({
@@ -140,11 +140,20 @@
       view.ui.add(legend, "top-left");
        // time slider widget initialization
        TimeSlider.getPropertiesFromWebMap(webmap).then((timeSliderSettings) => {
-  const timeSlider = new TimeSlider({
+      const timeSlider = new TimeSlider({
     ...timeSliderSettings,
     view,
     container: 'timeSlider'
   });
+  const scaleBar = new ScaleBar({
+          view: view,
+          unit: "dual" // The scale bar displays both metric and non-metric units.
+        });
+
+        // Add the widget to the bottom left corner of the view
+        view.ui.add(scaleBar, {
+          position: "top-right"
+        });
 });
 //const { unit, value } = timeSlider.stops.interval;
 //console.log(`The stop interval is every ${value} ${unit}.`); 
